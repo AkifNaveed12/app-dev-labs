@@ -13,37 +13,74 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.greenAccent,
+      // backgroundColor: Colors.greenAccent,
       appBar: AppBar(
         backgroundColor: Colors.blue,
+        leading: const Icon(Icons.school),
+        title: const Text(
+          'Student Profile',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        actions: const [
+          Icon(Icons.settings),
+        ],
       ),
-      body: const Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          Icon(
+            Icons.school,
+            size: 80,
+            color: Colors.blue,
+          ),
           Text(
-            'CUI',
+            'Muhammad Akif Naveed',
             style: TextStyle(
-              fontSize: 68
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          Text(
+            'Software Engineering Student',
+            style: TextStyle(
+              fontSize: 18,
+              color: Colors.grey,
             ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-                Text(
-            'Wah Campus',
-            style: TextStyle(fontSize: 38),
-          ),
-          Text(
-            ' Akif',
-            style: TextStyle(fontSize: 38),
-          ),
+              Column(
+                children: [
+                    Icon(Icons.school),
+                    Text('CUI Wah Campus')
+                ],
+              ),
+              Column(
+                children: [
+                  Icon(Icons.badge),
+                  Text('BSE - 5B'),
+                ],
+              )
             ],
           ),
-          Icon(
-            Icons.home,
-            color: Colors.white70,
-            size: 38,
-            )
+          Text(
+            'Welcome Akif!',
+            style: TextStyle(
+              fontSize: 18,
+              color: Colors.grey,
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.favorite),
+            iconSize: 35,
+            color: Colors.red,
+            onPressed: () {
+              print('Favorite button pressed');
+              },
+          ),
         ],
         ),
     );
