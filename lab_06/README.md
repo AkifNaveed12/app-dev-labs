@@ -1,17 +1,13 @@
-# lab_06
+## grid view
+![1791785444317](image/README/1791785444317.png)
 
-A new Flutter project.
+## vertical view
+![1791785495186](image/README/1791785495186.png)
 
-## Getting Started
+## horizontal view
+![1791785548766](image/README/1791785548766.png)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## create product
+![1791785584065](image/README/1791785584065.png)
+## description page
+![1791785609438](image/README/1791785609438.png)
