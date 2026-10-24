@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeScreen(),
-    );
+    return const MaterialApp(home: HomeScreen());
   }
 }
 
@@ -22,12 +19,29 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('My first screen'),
-      ),
-      body: const Center(
-        child: Text('Hello Flutter!'),
-      ),
-    );
-  }
+      appBar: AppBar(title: const Text('My first screen')),
+      body: Column(
+          children: [
+            Text('Hello Flutter!'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+              Icon(Icons.call),
+              Icon(Icons.message),
+              Icon(Icons.email),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Product Name'),
+                Text('Product Description'),
+                Text('Product Price'),
+              ],
+            ),
+          ],
+        ),
+      );
+    }
 }
