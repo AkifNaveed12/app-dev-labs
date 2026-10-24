@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 
 class ProfileCard extends StatelessWidget {
@@ -25,9 +24,9 @@ class ProfileCard extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: 40,
-                    child: Icon(Icons.person, size: 40),
+                    child: const Icon(Icons.person, size: 40),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                     ),
                   Text(
@@ -37,12 +36,12 @@ class ProfileCard extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 6,
                   ),
                   Text('Flutter Developer Student!'),
                   // option sections
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -51,8 +50,8 @@ class ProfileCard extends StatelessWidget {
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Icon(Icons.call),
-                          SizedBox(height: 6),
+                          const Icon(Icons.call),
+                          const SizedBox(height: 6),
                           Text('Call'),
                         ],
                       ),
@@ -60,8 +59,8 @@ class ProfileCard extends StatelessWidget {
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Icon(Icons.mail),
-                          SizedBox(height: 6),
+                          const Icon(Icons.email),
+                          const SizedBox(height: 6),
                           Text('Email'),
                         ],
                       ),
@@ -70,8 +69,8 @@ class ProfileCard extends StatelessWidget {
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Icon(Icons.message),
-                          SizedBox(height: 6),
+                          const Icon(Icons.message),
+                          const SizedBox(height: 6),
                           Text('Message'),
                         ],
                       )
