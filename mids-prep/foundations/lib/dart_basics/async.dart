@@ -32,3 +32,23 @@ Future<List<Product>> getProducts() async {
     throw Exception('Failed to load products');
   }
 }
+
+//loading function
+// Future<void> loadData() async {
+//   try {
+//     List<Product> temp = await getProducts();
+
+//     if (!mounted) return;
+
+//     setState(() {
+//       products = temp;
+//       isLoading = false;
+//     });
+//   } catch (e) {
+//     if (!mounted) return;
+
+//     setState(() {
+//       isLoading = false;
+//     });
+//   }
+// }
