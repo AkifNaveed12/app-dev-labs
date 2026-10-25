@@ -1,7 +1,9 @@
 
 import 'package:flutter/material.dart';
+import 'package:foundations/productDetails.dart';
 import 'basics.dart';
 import 'profile_card.dart';
+import 'productDetails.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: ProfileCard(),
+      home: Productdetails(),
     );
   }
 }
