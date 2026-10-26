@@ -40,7 +40,7 @@ class ServiceTile extends StatelessWidget {
                   size: 30,
                   color: AppColors.black,
                 ),
-                if (showTitle) ...[
+                if (showTitle) ...[  // conditional rendering
                   const SizedBox(width: 10),
                   Flexible(
                     child: Text(
