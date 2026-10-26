@@ -1,0 +1,1 @@
+// Reusable colored or white service tile, with a tappable area.

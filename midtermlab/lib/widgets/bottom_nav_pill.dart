@@ -1,0 +1,1 @@
+// Floating white navigation capsule and active icon styling.
